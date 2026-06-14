@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Fibonacci Generator by SomeoneElse</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-$END$
+    <br><br><br>
+    <center>
+    <div class="box">
+        <br>
+        <center>
+            <h1>Fibonacci Generator</h1>
+            <br>
+            <p class="display" id="cDisplay">0</p>
+            <br>
+            <p> &nbsp;Starting Value &nbsp; &nbsp; &nbsp; &nbsp; Sequences to run &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Delay in ms &nbsp; </p>
+            <label for="startValue"></label><input type="number" id="startValue" placeholder="Starting Value" style="width: 120px;" min="1">
+            <label for="sequencesToRun"></label><input type="number" id="sequencesToRun" placeholder="Sequences to run" style="width: 120px;" min="1">
+            <label for="delayInMs"></label><input type="number" id="delayInMs" placeholder="Delay in ms" style="width: 120px;" min="1">
+            <br><br>
+            <button onclick="startSequence()" class="start">Start</button> <button onclick="stopSequence()" class="stop">Stop</button>
+        </center>
+        <br>
+    </div>
+    </center>
 </body>
 </html>

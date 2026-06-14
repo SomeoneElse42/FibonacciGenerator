@@ -1,0 +1,56 @@
+body {
+    background-color: #1c1c1c;
+    font-family: sans-serif;
+}
+
+div.box {
+    background-color: #555555;
+    width: 50%;
+    border-radius: 5px;
+}
+
+p.display {
+    font-size: 50px;
+    font-family: Consolas;
+    background-color: #818181;
+}
+
+button.start {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.start:hover {
+    background-color: #45a049;
+}
+
+button.stop {
+    background-color: #dc5454;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.stop:hover {
+    background-color: #aa4242;
+}
+
+input {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #818181;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    width: 120px;
+}
