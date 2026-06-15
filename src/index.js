@@ -30,7 +30,7 @@ function startSequence() {
 
         console.log(c + " " + currentSequence + "/" + sequenceNumber + " " + phiApprox);
 
-        document.getElementById("cDisplay").innerHTML = "Sequence: ${c}<br>φ Approx: ${phiApprox}";
+        document.getElementById("cDisplay").innerHTML = `Sequence: ${c}<br>φ Approx: ${phiApprox}`;
 
         currentSequence++;
     }, timeout);
