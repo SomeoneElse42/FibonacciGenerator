@@ -1,9 +1,9 @@
 let sequence;
-let phiApprox; // Declare phiApprox outside the function to make it accessible
+let phiApprox;
 
 function startSequence() {
     let inputElement = document.getElementById("startValue");
-    let a = parseInt(inputElement.value, 10) || 1; // Default to 1 if invalid
+    let a = parseInt(inputElement.value, 10) || 1;
     let b = 0;
     let c = a + b;
 
