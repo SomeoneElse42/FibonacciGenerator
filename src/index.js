@@ -1,4 +1,5 @@
-let sequence
+let sequence;
+let phiApprox; // Declare phiApprox outside the function to make it accessible
 
 function startSequence() {
     let inputElement = document.getElementById("startValue");
@@ -6,24 +7,31 @@ function startSequence() {
     let b = 0;
     let c = a + b;
 
-
     console.log(c);
 
-    let sequenceNumber = document.getElementById("sequencesToRun").value
-    let currentSequence = 0
-    let timeout = document.getElementById("delayInMs").value
+    let sequenceNumber = document.getElementById("sequencesToRun").value;
+    let currentSequence = 0;
+    let timeout = document.getElementById("delayInMs").value;
 
     sequence = setInterval(() => {
-        if (currentSequence > sequenceNumber) {
+        if (currentSequence >= sequenceNumber) {
             clearInterval(sequence);
             return;
         }
-        console.log(c + " " + currentSequence + "/" + sequenceNumber);
+
+
         a = b;
         b = c;
         c = a + b;
-        currentSequence = currentSequence + 1
-        document.getElementById("cDisplay").innerHTML = c
+
+        phiApprox = c / b;
+
+        console.log(c + " " + currentSequence + "/" + sequenceNumber + " " + phiApprox);
+
+        document.getElementById("cDisplay").innerHTML =
+            `Sequence: ${c}<br>φ Approx: ${phiApprox}`;
+
+        currentSequence++;
     }, timeout);
 }
 
