@@ -17,7 +17,6 @@ function startSequence() {
     sequence = setInterval(() => {
         if (currentSequence >= sequenceNumber) {
             clearInterval(sequence);
-            return;
         }
 
 
