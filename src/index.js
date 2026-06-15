@@ -2,6 +2,7 @@ let sequence;
 let phiApprox;
 
 function startSequence() {
+    clearInterval(sequence);
     let inputElement = document.getElementById("startValue");
     let a = parseInt(inputElement.value, 10) || 1;
     let b = 0;
