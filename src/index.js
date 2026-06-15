@@ -18,7 +18,7 @@ function startSequence() {
             clearInterval(sequence);
             return;
         }
-        console.log(c + "   " + currentSequence + " / " + sequenceNumber);
+        console.log(c + " " + currentSequence + "/" + sequenceNumber);
         a = b;
         b = c;
         c = a + b;
