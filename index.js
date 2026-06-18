@@ -48,12 +48,13 @@ function toggleLearnMore() {
         document.getElementById("funFacts").innerHTML = funFacts
         document.getElementById("linkFibonacciSequence").innerHTML = "Fibonacci Sequence"
         document.getElementById("linkPhi").innerHTML = "Golden Ratio"
+        document.getElementById("linkRepo").innerHTML = "GitHub Repo"
     }
     else {
         document.getElementById("learnMore").innerHTML = "Learn More";
         document.getElementById('learnMore').className = "start";
         document.getElementById("funFacts").innerHTML = "";
         document.getElementById("linkFibonacciSequence").innerHTML = ""
-        document.getElementById("linkPhi").innerHTML = ""
+        document.getElementById("linkRepo").innerHTML = ""
     }
 }
