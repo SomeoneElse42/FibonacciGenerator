@@ -55,6 +55,7 @@ function toggleLearnMore() {
         document.getElementById('learnMore').className = "start";
         document.getElementById("funFacts").innerHTML = "";
         document.getElementById("linkFibonacciSequence").innerHTML = ""
+        document.getElementById("linkPhi").innerHTML = ""
         document.getElementById("linkRepo").innerHTML = ""
     }
 }
